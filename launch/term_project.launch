@@ -1,0 +1,8 @@
+
+<launch>
+  <include file="$(find kobuki_node)/launch/minimal.launch"/>
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+  <node pkg="term_project" name="opencv_test" type="opencv_test.py"/>
+  <!--include file="$(find darknet_ros)/launch/darknet_ros_term.launch"/-->
+  <!--node pkg="term_project" name="pub_result" type="pub_result.py"/-->
+</launch>

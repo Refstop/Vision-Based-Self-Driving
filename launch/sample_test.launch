@@ -1,0 +1,8 @@
+
+<launch>
+  <include file="$(find kobuki_node)/launch/minimal.launch"/>
+  <node pkg="term_project" name="pub_sample" type="pub_sample.py"/>
+  <!--include file="$(find darknet_ros)/launch/darknet_ros_term.launch"/-->
+  <!--node pkg="term_project" name="pub_result" type="pub_result.py"/-->
+  <!--node pkg="rqt_image_view" name="rqt_image_view" type="rqt_image_view"/-->
+</launch>
